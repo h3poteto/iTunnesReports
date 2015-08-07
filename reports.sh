@@ -1,9 +1,6 @@
-VENDOR_ID=86261454
 DATE=`date '+%Y%m%d' --date '2 day ago'`
 ORIGINAL_FILE="S_D_${VENDOR_ID}_${DATE}.txt"
 NEW_FILE="S_D_${VENDOR_ID}_${DATE}.tsv"
-SLACK_CHANNEL="#whalebird"
-SLACK_URL="https://hooks.slack.com/services/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"
 
 # itunes storeからレポートファイル取得
 java Autoingestion key.properties ${VENDOR_ID} Sales Daily Summary ${DATE}
